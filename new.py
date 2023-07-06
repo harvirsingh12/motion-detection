@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-/*cap = cv2.VideoCapture('vtest.avi')*/
+cap = cv2.VideoCapture('output.mp4')
 fourcc = cv2.VideoWriter_fourcc(*"X264")
 out = cv2.VideoWriter("output.mp4", fourcc, 15.0, (1280, 360))
 frame_width = int( cap.get(cv2.CAP_PROP_FRAME_WIDTH))
